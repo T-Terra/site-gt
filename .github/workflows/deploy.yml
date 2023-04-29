@@ -1,0 +1,17 @@
+name: Deploy Web site
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Upload files to Azure Blob Storage
+      uses: azure/CLI@v1.0.0
+      with:
+        inlineScript: az storage blob upload-batch --destination "$web" --account-name saterrateste --account-key ${{ secrets.AZURE_STORAGE_ACCESS_KEY }} --source . --pattern "*"
+
