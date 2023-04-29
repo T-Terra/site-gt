@@ -13,5 +13,5 @@ jobs:
     - name: Upload files to Azure Blob Storage
       uses: azure/CLI@v1.0.0
       with:
-        inlineScript: az storage blob upload-batch --destination \$web --account-name saterrateste --account-key ${{ secrets.AZURE_STORAGE_ACCESS_KEY }} --source . --pattern "*"
+        inlineScript: az storage blob upload-batch --destination \$web --account-name saterrateste --account-key ${{ secrets.AZURE_STORAGE_ACCESS_KEY }} --source . --pattern "*" "*.html"
 
