@@ -1,51 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <title>Gabriel Terra</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="/css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-<div class="container mt-5">
-  <button id="theme-toggle" class="btn btn-light"><i id="theme-icon" class="fas fa-moon"></i></button>
-  <div class="row">
-    <div class="col-md-4 text-center">
-      <img src="img/foto_gabriel.jpg" class="img-fluid img-circle" alt="Minha Foto">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark shadow-sm">
+      <div class="container">
+        <strong><a class="navbar-brand text-bg-dark" href="#">GT</a></strong>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-bg-dark" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-bg-dark" href="#">Projetos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="py-5 text-center container">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img style="border-radius: 10%; object-fit: cover; object-position: center;" src="img/foto_gabriel_340_425.jpg" class="img-fluid img-circle" alt="Minha Foto">
+        </div>
+        <div class="col text-start">
+          <h1 class="text-center">Resumo</h1>
+          <p>Olá! Sou <strong>Gabriel Terra</strong>, desenvolvedor e analista de QA, com experiência em automação de testes, CI/CD, AWS e desenvolvimento de software seguro. Minha trajetória inclui trabalhos com Python, C#, C++ e Shell Script, além de experiência com monitoramento e deploy de aplicações na nuvem.
+
+            Atuo também no desenvolvimento de jogos com Unity, criando mecânicas e sistemas inovadores. Busco sempre aprimorar minhas habilidades em qualidade de software e engenharia de testes para entregar soluções robustas e eficientes.
+            
+            Confira meus projetos e entre em contato!!
+          </p>
+          <p>
+            <button type="button" class="btn btn-dark">Meus Projetos</button>
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="col-md-8">
-      <h1>Gabriel Terra</h1>
-      <h5>Sobre mim</h5>
-      <p>I am a student of information security at Fatec College. I enjoy reading books on information security and computer networks, and I am working towards obtaining the DCPT certification in order to become a professional Pentester!</p>
-      <h5>Formação Acadêmica</h5>
-      <ul>
-        <li>FATEC Ourinhos Faculdade de Tecnologia de Ourinhos
-          Curso Superior de Tecnologia (CST), Segurança da Informação · (junho de
-          2020 - junho de 2023)
-          </li>
-      </ul>
-      <h5>Experiência Profissional</h5>
-      <ul>
-        <li>Port Louis
-          Analista de QA júnior
-          novembro de 2021 - Present (1 ano 7 meses)
-          </li>
-      </ul>
-      <h5>Certifications</h5>
-      <ul>
-        <li>Boas Práticas de Cibersegurança</li>
-        <li>Introduction to Cybersecurity</li>
-        <li>Fundamentos em Cibersegurança</li>
-        <li>Scrum Master</li>
-      </ul>
+  </section>
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+      <div class="row row-cols-3">
+
+        <div style="margin-bottom: 5rem;" class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 5rem;" class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 5rem;" class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 5rem;" class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 5rem;" class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 5rem;" class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-dark">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
   <footer>
@@ -56,7 +130,7 @@
       </div>
     </div>
   </footer>  
-</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="/js/theme-toggle.js"></script>
 </body>
 </html>
